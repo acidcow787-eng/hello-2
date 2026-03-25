@@ -6,8 +6,7 @@ CORS(app)
 DATABASE_URL = os.getenv( 
 "DATABASE_URL", 
 "postgresql://volkan:201eAcwsVd7cf1jyxQL2F1wn4VZ3FSbW@dpg
-d3t90iur433s73b5q070-a.oregon-postgres.render.com/cloud_db_gwjr" 
-) 
+d3t90iur433s73b5q070-a.oregon-postgres.render.com/cloud_db_gwjr") 
 def connect_db(): 
 return psycopg2.connect(DATABASE_URL) 
 @app.route("/ziyaretciler", methods=["GET", "POST"]) 
